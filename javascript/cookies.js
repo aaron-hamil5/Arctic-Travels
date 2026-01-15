@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Accept cookies
     document.getElementById("accept-cookies").addEventListener("click", () => {
         localStorage.setItem("userAccepted", true);
+        banner.remove();
     }); //Saves the user choice and unlocks the changing theme
 
     // Decline cookies

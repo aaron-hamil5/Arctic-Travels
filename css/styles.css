@@ -1,8 +1,12 @@
 /* Add this CSS file to each page for a consistent look*/
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=TASA+Explorer:wght@400..800&display=swap');
 
-h1 h2 h3 h4 h5 h6{
-
+h1, h2, h3, h4, h5, h6{
+    font-family: "TASA Explorer", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: var(--md-sys-color-on-surface);
+    transition: color 0.3s;
 }
 
 body{
@@ -20,13 +24,15 @@ body p{
 
 a{
     text-decoration: none;
+    font-size: 40px;
     color: var(--md-sys-color-on-surface);
     transition: color 0.3s;
+    margin: auto 0;
 }
 
 #header{
     display: flex;
-    justify-content:space-between;
+    justify-content: space-evenly;
     padding: 5px 25px 5px 25px;
     height: 100px;
     left: 0;
@@ -69,12 +75,12 @@ nav ul li{
 }
 
 nav ul li a {
-  color: var(--md-sys-color-on-surface);
-  text-align: center;
+    color: var(--md-sys-color-on-surface);
+    text-align: center;
     font-size: 40px;
-  text-decoration: none;
-  margin: auto;
-  transition:color 0.3s;
+    text-decoration: none;
+    margin: auto;
+    transition:color 0.3s;
 }
 
 .selected{
@@ -108,7 +114,25 @@ main{
     padding-top: 75px;
     padding-bottom: 15px;
     margin: 0 15% 5px 15%;
-    min-height: calc(100vh - 140px);
+}
+
+.button{
+    display: block;
+    background-color: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 0 solid gray;
+    transition: background-color 0.3s, color 0.3s;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
 }
 
 /* This is a pre-made footer, it is a landscape format*/

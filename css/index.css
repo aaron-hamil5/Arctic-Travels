@@ -1,1 +1,40 @@
 /* Add custom styles here for this page */
+
+#cta_banner{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    transition: height 0.6s;
+}
+
+#cta_banner.light{
+    background-image: url(/images/ui/cta/cta_banner_light.webp);
+}
+#cta_banner.dark{
+    background-image: url(/images/ui/cta/cta_banner_dark.webp);
+}
+
+#cta_banner_text{
+    position: absolute;
+    align-self: center;
+    width: 1000px;
+    left: calc(50% - 500px);
+    text-align: center;
+}
+#cta_banner_text h1{
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+}
+#cta_banner_text p{
+    font-size: 20px;
+    margin: 20px 0;
+    transition: opacity 0.6s;
+}
+
+.button.cta{
+    font-size: 20px;
+    width: 50%;
+    margin: 0 auto;
+    transition: opacity 0.6s;
+}

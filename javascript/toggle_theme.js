@@ -16,20 +16,28 @@ function setTheme(){
     if(darkThemeEnabled === 2){ //Dark Mode
         document.body.classList.add("dark");
         document.body.classList.remove("light");
+        document.getElementById("cta_banner").classList.add("dark");
+        document.getElementById("cta_banner").classList.remove("light");
         document.getElementById("theme_toggle").src = "/images/ui/dark_mode.webp";
     } else if (darkThemeEnabled === 1) { //Light Mode
         document.body.classList.add("light");
         document.body.classList.remove("dark");
+        document.getElementById("cta_banner").classList.add("light");
+        document.getElementById("cta_banner").classList.remove("dark");
         document.getElementById("theme_toggle").src = "/images/ui/light_mode.webp";
     }
     else if (darkThemeEnabled === 0){ //Auto Mode
         if(window.matchMedia("(prefers-color-scheme: dark)").matches){
             document.body.classList.add("dark");
             document.body.classList.remove("light");
+            document.getElementById("cta_banner").classList.add("dark");
+            document.getElementById("cta_banner").classList.remove("light");
             document.getElementById("theme_toggle").src = "/images/ui/auto_mode.webp";
         } else{
             document.body.classList.add("light");
             document.body.classList.remove("dark");
+            document.getElementById("cta_banner").classList.add("light");
+            document.getElementById("cta_banner").classList.remove("dark");
             document.getElementById("theme_toggle").src = "/images/ui/auto_mode.webp";
         }
     }
